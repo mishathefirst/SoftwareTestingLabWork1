@@ -4,7 +4,7 @@ public class ArctgCalculation {
 
 
     public double calculate(double arg) {
-        return ...
+        return rowArctg(arg);
     }
 
     public double getResult() {
@@ -16,6 +16,23 @@ public class ArctgCalculation {
 
     public ArctgCalculation(double argument) {
         this.result = calculate(argument);
+    }
+
+
+    private double rowArctg(double x) {
+        int n = 1;
+        double y = 0;
+        double yPrevious = 5;
+        if (Math.abs(x) <= 1) {
+            while (Math.abs(y - yPrevious) > Math.pow(10, -5)) {
+                yPrevious = y;
+                y = y + Math.pow(-1, (n - 1)) * ((Math.pow(x, (2 * n - 1))) / (2 * n - 1));
+                n++;
+            }
+            return y;
+        } else {
+            throw new ArithmeticException();
+        }
     }
 
 }
