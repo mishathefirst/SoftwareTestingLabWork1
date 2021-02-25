@@ -6,6 +6,10 @@ public class Lackey extends Person{
         this.mood = "worried";
     }
 
+    public void blockDoor(Door door) {
+        door.lock();
+    }
+
     public void blockWay() {
         this.action = "Block the way";
         this.location = "Doorway";

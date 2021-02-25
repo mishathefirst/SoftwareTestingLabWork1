@@ -6,9 +6,10 @@ public class Rebel extends Person{
         this.mood = "angry";
     }
 
-    public void breakIn() {
+    public void breakIn(Door door) {
         this.action = "Break door";
         this.location = "Room";
+        door.open();
     }
 
     public String getMood() {
