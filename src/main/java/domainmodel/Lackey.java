@@ -19,4 +19,16 @@ public class Lackey extends Person{
         this.mood = mood;
     }
 
+    public String getMood() {
+        return this.mood;
+    }
+
+    public String getAction() {
+        return this.action;
+    }
+
+    public String getLocation() {
+        return this.location;
+    }
+
 }

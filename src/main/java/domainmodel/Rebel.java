@@ -11,6 +11,18 @@ public class Rebel extends Person{
         this.location = "Room";
     }
 
+    public String getMood() {
+        return this.mood;
+    }
+
+    public String getAction() {
+        return this.action;
+    }
+
+    public String getLocation() {
+        return this.location;
+    }
+
     public void scream() {
         this.action = "scream";
     }

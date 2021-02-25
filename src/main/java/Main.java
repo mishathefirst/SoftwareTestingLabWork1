@@ -1,3 +1,5 @@
+import domainmodel.Rebel;
+
 public class Main {
     public static void main(String[] args) {
         /*
@@ -17,5 +19,17 @@ public class Main {
         for (int i = 0; i < newArray.length; i++) {
             System.out.println(newArray[i]);
         }
+
+/*
+        String[] clothesArray = {"Robe", "belt"};
+        Rebel rebel1 = new Rebel("Rebel1", "Walk", "Outdoors", clothesArray, "neutral");
+
+
+        System.out.println(rebel1.action);
+        System.out.println(rebel1.location);
+        rebel1.breakIn();
+        System.out.println(rebel1.action);
+        System.out.println(rebel1.location);
+        */
     }
 }
